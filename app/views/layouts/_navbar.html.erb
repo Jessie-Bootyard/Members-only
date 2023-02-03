@@ -1,0 +1,28 @@
+<nav class="navbar">
+
+    <div class="navbar_logo">
+
+        <%= link_to root_path do %>
+            <%= image_tag "ml.png", class: "navbar-image" %>
+        <% end %>
+        
+        <h1 class="title">
+            <span>
+                <%= link_to "MEMBERS ONLY", root_path, style: "color: orangered; text-decoration: none "%>        
+            </span , root_path>
+        </h1>
+        <%# link all posts  %>
+        
+            
+    </div>
+
+     <%# link all posts  %>
+    <div class="navbar_end">  
+    <h2><%= link_to "Posts", posts_path%></h2>
+        <div class="button_container">
+            <%= link_to "Home", root_path,class:"home_article" %>
+            <%= link_to "AddPost ", new_post_path,class:"new_article" %>
+            <%= render 'user/session_manager' %>                  
+         </div>
+    </div>
+</nav>
