@@ -8,10 +8,10 @@
 
   <div class="already-have-account">
 
-  <p>Delete? <%= button_to "Delete my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+  <p class= "confirm">Are you absolutely sure to delete this account? <%= button_to "I understand the consequences.", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 
-<%= link_to "Back", :back %>
+<%= link_to "Cancel", :back %>
 </div>
 
 <% end %>

@@ -93,25 +93,280 @@ main{
     justify-content: center;;
 }
 .wrapper{
+    margin-top: 10px;
     width: 80%;
     background-color: #0d1117;
     height: fit-content;
     padding: 15px;
-    border-radius: 6px  ;
+    border-radius: 6px;
+    
+}
+.show__date{
+    display: flex;
+    border-bottom: 0.01rem solid #cecece;
+    margin-bottom: 10px;
+}
+.time{
+    font-style: italic;
+}
+.show__description{
+    padding: 5px;
+    background-color: #222831;
+    border-radius: 6px;
+}
+.configure{
+    display: flex;
+
+}
+.configure form{
+    width: fit-content;
+}
+.configure form .btn{
+    width: fit-content;
+    height: 30px;
+    background-color: #0d1117;
+    border : 0.01rem solid #6e7681;
+    margin-right: 10px;
+}
+.configure form .btn:hover{
+    border : 0.01rem solid goldenrod;
+    color: goldenrod;
+}
+.comment__container{
+    margin-top: 10px;
+}
+.comment__title{
+    font-size: 1.1rem;
+}
+.comment__form textarea,.comment__form textarea::placeholder, .comment__form textarea:focus{
+    background-color: #222831;
+    color: white;
+    padding: 5px;  
+    border: none;
+    box-shadow: none;
+}
+.comment-btn{
+    margin-top: 10px;
+}
+.comment-btn input{
+    margin-top: 10px;
+    background-color: #0d1117;
+    color: white;
+    outline: none !important;
+    border: 0.01rem solid #6e7681;
+    padding: 3px 5px 3px 5px;
+    border-radius: 6px;
+}
+.button_to button{
+    margin-top: 10px;
+    background-color: #0d1117;
+    color: white;
+    outline: none !important;
+    border: 0.01rem solid #6e7681;
+    padding: 3px 5px 3px 5px;
+    border-radius: 6px; 
+}
+.button_to button:hover, .comment-btn input:hover{
+    background-color: #0d1117;
+    color: goldenrod;
+    border: 0.01rem solid goldenrod;
 }
 .create{
     width: 70%;
 }
-.custom__container{
+.addpost_can{
     width: 100%;
-    background-color: #0d1117;
+    background-color: #393E46;        
     border-radius: 6px;
     height: fit-content;
-    padding: 10px;
 }
 form{
     width: 100%;
     height: fit-content;
-    border: .01rem solid #6e7681;
     border-radius: 6px;
+}
+form .wrapper_addpost{
+    width: 100%;
+    height: fit-content;
+    background-color: #222831;
+    padding: 20px; 
+    border-radius: 6px;
+}
+.addpost_con{
+    display: block;
+    margin: 10px 0 10px 0;
+    height: fit-content;
+}
+.addpost_con label{
+    width: 100%;
+    height: 30px;
+}
+.addpost_con input{
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    background-color: #0d1117;
+    outline: none !important;
+    color : white;
+    border: .01rem solid transparent;
+}
+.addpost_con textarea{
+    width: 100%;
+    height: 75px;
+    border-radius: 6px;
+    background-color: #0d1117;
+    outline: none !important;
+    border: .01rem solid transparent;
+}
+.addpost_con select{
+    height: 30px;
+    border-radius: 6px;
+    background-color: #0d1117;
+    outline: none !important;
+    text-align: center;
+    color: white;
+    border: .01rem solid transparent;
+}
+.cancel{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    outline: none !important;
+    text-align: center;
+}
+.cancel a{
+    border-radius: 6px;
+    background-color: #0d1117;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: -30px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    border: .01rem solid transparent;
+}
+.cancel a:hover, .addpost_con input:hover,.addpost_con input:focus, .addpost_con textarea:hover, .addpost_con textarea:focus, .addpost_con select:hover, .addpost_con select:focus{
+    border-color: goldenrod;
+}
+.sign-up-container,.sign-in-container{
+    width: 70%;
+    height: fit-content;
+}
+.s-wrapper{
+    background-color: #0d1117;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    text-align: center;
+}
+.new_user{
+    width: 100%;
+    height: fit-content;
+}
+.new_user .field{
+    width: 100%;
+    height: fit-content;
+    margin: 15px 0 15px 0;
+}
+.new_user .field input, .new_user .actions input{
+    width: 60%;
+    background-color: #0d1117;
+    border: .01rem solid #6e7681;
+    outline: none;
+    border-radius: 6px;
+    height: 30px;
+    color: white;
+    text-align: center;
+}
+.new_user .field input:focus, .new_user .actions input:focus, .new_user .field input:hover, .new_user .actions input:hover{
+    border: .01rem solid goldenrod;
+    color: goldenrod;
+}
+
+
+.new_user{
+    width: 100%;
+    height: fit-content;
+}
+.new_user .field{
+    width: 100%;
+    height: fit-content;
+    margin: 15px 0 15px 0;
+}
+.new_user .field input, .new_user .actions input{
+    width: 60%;
+    background-color: #0d1117;
+    border: .01rem solid #6e7681;
+    outline: none;
+    border-radius: 6px;
+    height: 30px;
+    color: white;
+    text-align: center;
+}
+.new_user .field input:focus, .new_user .actions input:focus, .new_user .field input:hover, .new_user .actions input:hover{
+    border: .01rem solid goldenrod;
+    color: goldenrod;
+}
+.alert{
+    top: 80px;
+    position:fixed;
+    color: red;
+    transition: 5s ease-out;
+}
+.edit_con{
+    width: 80%;
+    height: fit-content;
+}
+.dropdown a{
+    background-color: #222831;
+}
+.dropdown a:active, .dropdown a:hover, .dropdown a:focus{
+    color: goldenrod;
+    background-color: #222831;
+}
+.dropdown-menu{
+    width: 100%;
+    height: fit-content;
+}
+.dropdown-menu li{
+    width: 100%;
+    height: fit-content;
+}
+.dropdown-menu li a{
+    text-align: left;
+    width: 100%;
+    height: fit-content;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: #222831;
+    border: .01rem solid goldenrod;
+}
+.btn-danger {
+    background-color: #222831;
+    border: .01rem solid #6e7681;
+}
+.button_to{
+    width: 100%;
+    height: fit-content;
+}
+.button_to button{
+    width: fit-content;
+    height: fit-content;
+    text-align: left;
+    background-color: #222831;
+    border: none;
+}
+.button_to button:hover{
+    background-color: #222831;
+    border: none;
+}
+.confirm button{
+    background-color: crimson;
+    color: white;
+    padding: 5px;
+    border: none;
+    outline: none !important;
+    border-radius: 5px;
+    margin: 5px;
 }

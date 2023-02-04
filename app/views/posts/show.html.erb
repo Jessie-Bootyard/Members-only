@@ -3,7 +3,13 @@
 
      <% if current_user %>
         <div class="show__date">
-            <strong>Owner: <%=@post.user.username %> </strong> created on <%= time_ago_in_words(@post.created_at) %>
+            <strong>
+                Posted by - 
+                <%=@post.user.username %>
+            </strong>&nbsp;|&nbsp;
+            <p class="time">
+                 <%= time_ago_in_words(@post.created_at) %>
+            </p>
         </div>
         <h3 class="show__title"><%=@post.title%></h3>
             <p class="show__description"><%=@post.description%></p>
